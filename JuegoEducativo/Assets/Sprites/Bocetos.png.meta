@@ -1,0 +1,124 @@
+fileFormatVersion: 2
+guid: a0fa71e9fa5c29a439a79c1dfc71bcbe
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Bocetos_0
+    21300002: Bocetos_1
+    21300004: Bocetos_2
+    21300006: Bocetos_3
+    21300008: Bocetos_4
+    21300010: Bocetos_5
+    21300012: Bocetos_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Bocetos_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 831
+        width: 197
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bocetos_1
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 830
+        width: 198
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bocetos_2
+      rect:
+        serializedVersion: 2
+        x: 541
+        y: 832
+        width: 198
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bocetos_3
+      rect:
+        serializedVersion: 2
+        x: 797
+        y: 830
+        width: 198
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bocetos_4
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 532
+        width: 130
+        height: 216
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bocetos_5
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 55
+        width: 418
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Bocetos_6
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 55
+        width: 418
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
