@@ -7,6 +7,14 @@ public class BasuraCreator : MonoBehaviour {
 	public GameObject Basura2;
 	public GameObject Basura3;
 
+	private int numeroBasura;
+	
+	void Awake () 
+	{
+		numeroBasura = PlayerPrefs.GetInt ("numeroBasura");
+	}
+
+
 	// Use this for initialization
 	void Start () {
 		InvokeRepeating ("GenerateBasuras", 2f, 1);
@@ -14,12 +22,11 @@ public class BasuraCreator : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		numeroBasura = PlayerPrefs.GetInt ("numeroBasura");
 	}
 	
 	public void GenerateBasuras ()
 	{
-		int numeroBasura = Random.Range (1, 4);
-		PlayerPrefs.SetInt("numeroBasura", numeroBasura);
 
 		switch (numeroBasura) 
 		{

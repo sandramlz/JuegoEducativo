@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour {
 	public GameObject Basuraa2;
 	public GameObject Basuraa3;
 
+	private BasuraCreator Basura;
+
 	private Vector3 PosicionBasura;
 	private float BasuraEnX;
 	private float BasuraEnY;
@@ -67,7 +69,6 @@ public class PlayerController : MonoBehaviour {
 			default:
 				break;
 			}
-
 
 		}
 
