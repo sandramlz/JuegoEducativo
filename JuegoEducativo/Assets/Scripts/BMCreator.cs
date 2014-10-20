@@ -47,7 +47,7 @@ public class BMCreator : MonoBehaviour {
 		case 3:
 			GameObject basura3= GameObject.Instantiate(Basura3) as GameObject;
 			Vector3 posicionBasura3 = transform.position;
-			posicionBasura3.x = -3.75 f;
+			posicionBasura3.x = -3.75f;
 			posicionBasura3.y = 3.5f;
 			basura3.transform.position = posicionBasura3;
 			basura3.GetComponent<SpriteRenderer>().sortingOrder = 0;
