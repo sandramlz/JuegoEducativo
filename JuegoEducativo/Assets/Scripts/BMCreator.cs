@@ -26,8 +26,8 @@ public class BMCreator : MonoBehaviour {
 		case 1:
 			GameObject basura1= GameObject.Instantiate(Basura1) as GameObject;
 			Vector3 posicionBasura1 = transform.position;
-			posicionBasura1.x = -3.85f;
-			posicionBasura1.y = -3.7f;
+			posicionBasura1.x = -3.75f;
+			posicionBasura1.y = 3.5f;
 			basura1.transform.position = posicionBasura1;
 			basura1.GetComponent<SpriteRenderer>().sortingOrder = 0;
 
@@ -37,8 +37,8 @@ public class BMCreator : MonoBehaviour {
 		case 2:
 			GameObject basura2= GameObject.Instantiate(Basura2) as GameObject;
 			Vector3 posicionBasura2 = transform.position;
-			posicionBasura2.x = -3.85f;
-			posicionBasura2.y = -3.7f;
+			posicionBasura2.x = -3.75f;
+			posicionBasura2.y = 3.5f;
 			basura2.transform.position = posicionBasura2;
 			basura2.GetComponent<SpriteRenderer>().sortingOrder = 0;
 
@@ -47,8 +47,8 @@ public class BMCreator : MonoBehaviour {
 		case 3:
 			GameObject basura3= GameObject.Instantiate(Basura3) as GameObject;
 			Vector3 posicionBasura3 = transform.position;
-			posicionBasura3.x = -3.85f;
-			posicionBasura3.y = -3.7f;
+			posicionBasura3.x = -3.75 f;
+			posicionBasura3.y = 3.5f;
 			basura3.transform.position = posicionBasura3;
 			basura3.GetComponent<SpriteRenderer>().sortingOrder = 0;
 

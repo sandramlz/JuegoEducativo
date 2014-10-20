@@ -35,15 +35,15 @@ public class PlayerController : MonoBehaviour {
 			transform.Translate(new Vector3(-velocidad * Time.deltaTime,0,0));
 		}
 
-		if (transform.position.x < -2.1f) 
+		if (transform.position.x < -3.9f) 
 		{
-			transform.position = new Vector3(-2.1f, transform.position.y, transform.position.z);
+			transform.position = new Vector3(-3.9f, transform.position.y, transform.position.z);
 			
 		}
 		
-		if (transform.position.x > 2.0f) 
+		if (transform.position.x > 4.0f) 
 		{
-			transform.position = new Vector3(2.0f, transform.position.y, transform.position.z);
+			transform.position = new Vector3(4.0f, transform.position.y, transform.position.z);
 			
 		}
 
