@@ -9,7 +9,7 @@ public class BMCreator : MonoBehaviour {
 	
 	// Use this for initialization
 	void Start () {
-		InvokeRepeating ("GenerateBasuras", 2.5f, 1);
+		InvokeRepeating ("GenerateBasuras", 0.5f, 3);
 	}
 	
 	// Update is called once per frame
@@ -31,7 +31,7 @@ public class BMCreator : MonoBehaviour {
 			basura1.transform.position = posicionBasura1;
 			basura1.GetComponent<SpriteRenderer>().sortingOrder = 0;
 
-			Destroy(basura1.gameObject,1f);
+			Destroy(basura1.gameObject,2f);
 
 			break;
 		case 2:
@@ -42,7 +42,7 @@ public class BMCreator : MonoBehaviour {
 			basura2.transform.position = posicionBasura2;
 			basura2.GetComponent<SpriteRenderer>().sortingOrder = 0;
 
-			Destroy(basura2.gameObject,1f);
+			Destroy(basura2.gameObject,2f);
 			break;
 		case 3:
 			GameObject basura3= GameObject.Instantiate(Basura3) as GameObject;
@@ -52,7 +52,7 @@ public class BMCreator : MonoBehaviour {
 			basura3.transform.position = posicionBasura3;
 			basura3.GetComponent<SpriteRenderer>().sortingOrder = 0;
 
-			Destroy(basura3.gameObject,1f);
+			Destroy(basura3.gameObject,2f);
 			break;
 		default:
 			break;

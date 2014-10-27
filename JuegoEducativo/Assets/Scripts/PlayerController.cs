@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
-	public float velocidad = 1f;
+	public float velocidad = 0.5f;
 
 	public GameObject Basuraa1;
 	public GameObject Basuraa2;
@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour {
 	private Vector3 PosicionBasura;
 	private float BasuraEnX;
 	private float BasuraEnY;
+	private bool Mover=false;
 
 	private int numeroBasura;
 	
@@ -74,6 +75,8 @@ public class PlayerController : MonoBehaviour {
 
 		else if (!Input.anyKey){
 		}
+
+
 
 
 	}

@@ -17,7 +17,7 @@ public class BasuraCreator : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		InvokeRepeating ("GenerateBasuras", 2f, 1);
+		InvokeRepeating ("GenerateBasuras", 5f, 1);
 	}
 	
 	// Update is called once per frame

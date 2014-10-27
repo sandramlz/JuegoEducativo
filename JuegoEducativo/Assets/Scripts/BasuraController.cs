@@ -7,7 +7,7 @@ public class BasuraController : MonoBehaviour {
 
 
 	void Start () {
-		Invoke ("DestruirBasura", 1.5f);
+		Invoke ("DestruirBasura", 10f);
 	}
 	
 	// Update is called once per frame
@@ -16,7 +16,7 @@ public class BasuraController : MonoBehaviour {
 	}
 
 	void OnTriggerEnter2D(Collider2D objeto){
-			
+			Debug.Log("he entrado");
 			DestruirBasura ();
 			
 		}
