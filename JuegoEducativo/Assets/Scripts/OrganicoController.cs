@@ -9,7 +9,7 @@ public class OrganicoController : MonoBehaviour {
 	
 	void Awake () 
 	{
-		puedeDisparar= PlayerPrefs.GetInt ("puedeDisparar");
+		puedeDisparar= 1;
 		numeroBasura = PlayerPrefs.GetInt ("numeroBasura");
 		score_organico= PlayerPrefs.GetInt ("score_organico");
 	}
@@ -40,8 +40,8 @@ public class OrganicoController : MonoBehaviour {
 		default:
 			break;
 		}
-		puedeDisparar = 1;
-		PlayerPrefs.SetInt("puedeDisparar", puedeDisparar);
+//		puedeDisparar = 1;
+//		PlayerPrefs.SetInt("puedeDisparar", puedeDisparar);
 		Destroy (col.gameObject);
 
 	}

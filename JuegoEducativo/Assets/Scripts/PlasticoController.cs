@@ -8,7 +8,7 @@ public class PlasticoController : MonoBehaviour {
 	
 	void Awake () 
 	{
-		puedeDisparar= PlayerPrefs.GetInt ("puedeDisparar");
+		puedeDisparar= 1;
 		numeroBasura = PlayerPrefs.GetInt ("numeroBasura");
 		score_plastico= PlayerPrefs.GetInt ("score_plastico");
 	}

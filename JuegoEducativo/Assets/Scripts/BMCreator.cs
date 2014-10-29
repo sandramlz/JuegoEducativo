@@ -6,7 +6,12 @@ public class BMCreator : MonoBehaviour {
 	public GameObject Basura1;
 	public GameObject Basura2;
 	public GameObject Basura3;
+	public int puedeDisparar;
 	
+	void Awake () 
+	{
+				puedeDisparar = 1;
+	}
 	// Use this for initialization
 	void Start () {
 		InvokeRepeating ("GenerateBasuras", 0.5f, 5f);
@@ -14,6 +19,7 @@ public class BMCreator : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		puedeDisparar= PlayerPrefs.GetInt ("puedeDisparar");
 	}
 	
 	public void GenerateBasuras ()
@@ -58,4 +64,8 @@ public class BMCreator : MonoBehaviour {
 			break;
 		}
 		
-	}}
+		puedeDisparar = 1;
+		PlayerPrefs.SetInt("puedeDisparar", puedeDisparar);
+
+	}
+}

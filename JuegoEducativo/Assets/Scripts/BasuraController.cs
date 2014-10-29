@@ -6,10 +6,11 @@ public class BasuraController : MonoBehaviour {
 	private int score_plastico;
 	private int score_organico;
 	private int score_papel;
-
-	// Use this for initialization
+	private int puedeDisparar=1;
+	
 	void Awake () 
 	{
+		puedeDisparar= 1;
 		numeroBasura = PlayerPrefs.GetInt ("numeroBasura");
 		score_plastico = PlayerPrefs.GetInt ("score_plastico");
 		score_organico = PlayerPrefs.GetInt ("score_organico");
@@ -35,6 +36,8 @@ public class BasuraController : MonoBehaviour {
 
 	void DestruirBasura(){
 
+//		puedeDisparar = 1;
+//		PlayerPrefs.SetInt("puedeDisparar", puedeDisparar);
 
 		Destroy (gameObject);
 

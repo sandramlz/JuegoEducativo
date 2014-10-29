@@ -8,7 +8,7 @@ public class PapelController : MonoBehaviour {
 
 	void Awake () 
 	{
-		puedeDisparar= PlayerPrefs.GetInt ("puedeDisparar");
+		puedeDisparar= 1;
 		numeroBasura = PlayerPrefs.GetInt ("numeroBasura");
 		score_papel= PlayerPrefs.GetInt ("score_papel");
 	}
@@ -39,8 +39,8 @@ public class PapelController : MonoBehaviour {
 			break;
 		}
 
-		puedeDisparar = 1;
-		PlayerPrefs.SetInt("puedeDisparar", puedeDisparar);
+//		puedeDisparar = 1;
+//		PlayerPrefs.SetInt("puedeDisparar", puedeDisparar);
 		Destroy (col.gameObject);
 	}
 }
