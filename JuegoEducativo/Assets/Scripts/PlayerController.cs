@@ -13,12 +13,13 @@ public class PlayerController : MonoBehaviour {
 	private Vector3 PosicionBasura;
 	private float BasuraEnX;
 	private float BasuraEnY;
-	private bool Mover=false;
 
 	private int numeroBasura;
+	private int puedeDisparar=1;
 	
 	void Awake () 
 	{
+		puedeDisparar= PlayerPrefs.GetInt ("puedeDisparar");
 		numeroBasura = PlayerPrefs.GetInt ("numeroBasura");
 	}
 
@@ -26,16 +27,23 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		puedeDisparar= PlayerPrefs.GetInt ("puedeDisparar");
 		numeroBasura = PlayerPrefs.GetInt ("numeroBasura");
 		// Movimiento
 		if (Input.GetKey (KeyCode.RightArrow)) 
 		{
 			transform.Translate(new Vector3(velocidad * Time.deltaTime,0,0));
+			puedeDisparar = 1;
+			PlayerPrefs.SetInt("puedeDisparar", puedeDisparar);
+
 		}
 		
 		if (Input.GetKey (KeyCode.LeftArrow)) 
 		{
 			transform.Translate(new Vector3(-velocidad * Time.deltaTime,0,0));
+			puedeDisparar = 1;
+			PlayerPrefs.SetInt("puedeDisparar", puedeDisparar);
+
 		}
 
 		if (transform.position.x < -3.9f) 
@@ -51,7 +59,7 @@ public class PlayerController : MonoBehaviour {
 		}
 
 
-		if (Input.GetKeyDown (KeyCode.Space)){
+		if (puedeDisparar!=0 && Input.GetKeyDown (KeyCode.Space)){
 			BasuraEnX = 0.45f;
 			BasuraEnY = 1.1f;
 			PosicionBasura = new Vector3 (BasuraEnX, BasuraEnY, 0);
@@ -70,6 +78,10 @@ public class PlayerController : MonoBehaviour {
 			default:
 				break;
 			}
+
+			puedeDisparar = 0;
+			PlayerPrefs.SetInt("puedeDisparar", puedeDisparar);
+
 
 		}
 
