@@ -30,7 +30,7 @@ public class BasuraController : MonoBehaviour {
 		score_papel = PlayerPrefs.GetInt ("score_papel");
 
 
-		transform.Translate(new Vector2(0,  1* Time.deltaTime));
+		transform.Translate(new Vector2(0,  3* Time.deltaTime));
 	}
 
 

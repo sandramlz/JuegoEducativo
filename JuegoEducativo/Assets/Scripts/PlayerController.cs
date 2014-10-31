@@ -16,6 +16,10 @@ public class PlayerController : MonoBehaviour {
 
 	private int numeroBasura;
 	public int puedeDisparar=1;
+
+	private float tiempojugado=0;
+
+
 	
 	void Awake () 
 	{
@@ -27,6 +31,10 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+		tiempojugado = tiempojugado + Time.deltaTime;
+		Debug.Log (tiempojugado);
+
 		puedeDisparar= PlayerPrefs.GetInt ("puedeDisparar");
 		numeroBasura = PlayerPrefs.GetInt ("numeroBasura");
 		// Movimiento
@@ -89,6 +97,10 @@ public class PlayerController : MonoBehaviour {
 		}
 
 
+		if (tiempojugado > 30f) 
+		{
+			Application.LoadLevel("FinJuego");
+		}
 
 
 	}
